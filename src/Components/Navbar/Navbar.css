@@ -1,0 +1,136 @@
+#ieee-logo {
+    width: 200px;
+    margin: 1.5% 80% 10px 0px ;
+}
+
+#search {
+    background-color: #CCE1EB;
+    border-radius: 5px;
+}
+
+#input {
+    margin: 0 0 5% 0;
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222831;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.nav-items a {
+    font-size: 62%;
+    color: #13567D;
+    font-weight: 500;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-toggle div{
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: #222831;
+    transition: 0.3s ease-in;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    display: none;
+}
+
+.nav a {
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 6px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+    .nav-menu {
+        position: fixed;
+        top: 9vh;
+        right: 0;
+        width: 20%;
+        height: 50vh;
+        background: #EEEEEE;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.3s ease-in;
+        border-radius: 11px;
+        z-index: 20;
+        opacity: 0.9;
+    }
+    .nav-link {
+        font-size: 18px;
+        margin-right: 50px;
+    }
+}
+
+/* Nav Active Class */
+.nav-active {
+    transform: translateX(0);
+}
+
+/* Toggle Icon Animation */
+.toggle .first{
+    transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .second{
+    opacity: 0;
+}
+.toggle .third{
+    transform: rotate(45deg) translate(-4px, -5px);
+}
+
+.nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    transition: transform .5s;
+}
+.nav-items a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #13567D;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav a:hover:after {
+    width: 100%;
+    left: 0;
+}

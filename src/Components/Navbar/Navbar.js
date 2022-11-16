@@ -38,6 +38,22 @@ function Navbar() {
                 </li>
                 <li id="search">
                     <input id="input" type="text"/>
+                    <button id="searching">Search</button>
+                </li>
+                <li>
+                    <div id="vl"/>
+                </li>
+                <li id="login">
+                    <li className="nav-items">
+                        <NavLink className="nav-link" to="/Sign-in">
+                            SIGN IN
+                        </NavLink>
+                    </li>
+                    <li className="nav-items">
+                        <NavLink className="nav-link" to="/Register">
+                            REGISTER
+                        </NavLink>
+                    </li>
                 </li>
             </ul>
             <div onClick={navToggle} className={toggleIcon}>

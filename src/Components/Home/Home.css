@@ -1,0 +1,65 @@
+.Joining h1{
+    color: #12689B;
+    text-align: left;
+}
+
+.Joining p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #12689B;
+}
+
+.row {
+    display: flex;
+}
+
+.Joining {
+    margin-left: 18%;
+    margin-top: 100px;
+}
+
+.First-Picture {
+    margin-left: 18%;
+    margin-top: 50px;
+}
+
+.Join-Image {
+    width: 500px;
+}
+
+.Find-More h2{
+    color: #12689B;
+    text-align: left;
+}
+
+.Find-More p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #12689B;
+}
+
+.Find-More {
+    margin-left: 18%;
+    margin-top: 70px;
+}
+
+.Second-Picture {
+    margin-left: 16%;
+    margin-top: 100px;
+}
+
+.link-buttons {
+    width: 250px;
+    height: 55px;
+    margin-top: 5%;
+    border: none;
+    border-radius: 30px;
+    background-color: #FFD79B;
+}
+
+.link-buttons h4{
+    color: #12689B;
+    font-weight: 800;
+}

@@ -54,9 +54,15 @@
     width: 250px;
     height: 55px;
     margin-top: 5%;
-    border: none;
+    border-style: none;
     border-radius: 30px;
     background-color: #FFD79B;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.link-buttons:hover {
+    background-color: antiquewhite;
 }
 
 .link-buttons h4{

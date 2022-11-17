@@ -28,10 +28,16 @@
     margin-bottom: 6px;
     margin-right: 10px;
     border-radius: 5px;
-    border: none;
+    border-style: none;
     background-color: #CCE1EB;
     color: #808080;
     font-size: 55%;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+#searching:hover {
+    background-color: #b7d8ec;
 }
 
 *::before {

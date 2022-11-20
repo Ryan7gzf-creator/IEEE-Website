@@ -81,7 +81,7 @@ a {
     width: 2.5rem;
     height: 0.2rem;
     margin: 0.4rem;
-    background: #222831;
+    background: #13567D;
     transition: 0.3s ease-in;
 }
 
@@ -101,7 +101,7 @@ a {
     }
     .nav-menu {
         position: fixed;
-        top: 9vh;
+        top: 150px;
         right: 0;
         width: 50vw;
         background: #EEEEEE;

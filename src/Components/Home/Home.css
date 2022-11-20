@@ -1,3 +1,7 @@
+.row > div {
+    max-width: 400px;
+}
+
 .Joining h1{
     color: #12689B;
     text-align: left;
@@ -12,6 +16,10 @@
 
 .row {
     display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding: 0 20px;
+    align-items: center;
 }
 
 @media (max-width: 800px) {
@@ -29,27 +37,11 @@
     text-align: left;
 }
 
-.Find-More p{
-    font-size: 16px;
-    font-weight: 400;
-    text-align: left;
-    color: #12689B;
-}
-
-.Find-More {
-    margin-left: 13%;
-    margin-top: 70px;
-}
-
-.Second-Picture {
-    margin-left: 13%;
-    margin-top: 70px;
-}
-
 .link-buttons {
     width: 250px;
     height: 55px;
     margin-top: 5%;
+    margin-bottom: 5%;
     border-style: none;
     border-radius: 30px;
     background-color: #FFD79B;

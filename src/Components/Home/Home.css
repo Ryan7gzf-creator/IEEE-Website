@@ -14,21 +14,17 @@
     display: flex;
 }
 
-.Joining {
-    margin-left: 15.5%;
-    margin-top: 100px;
+@media (max-width: 800px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .row:nth-child(2) {
+        flex-direction: column-reverse;
+    }
 }
 
-.First-Picture {
-    margin-left: 15%;
-    margin-top: 40px;
-}
-
-.Join-Image {
-    width: 500px;
-}
-
-.Find-More h2{
+.Joining h2{
     color: #12689B;
     text-align: left;
 }
@@ -68,4 +64,19 @@
 .link-buttons h4{
     color: #12689B;
     font-weight: 800;
+}
+
+img {
+    width: 90%;
+}
+
+.Footer {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.Footer > svg:not(:first-child) {
+    margin-left: 30px;
 }

@@ -103,15 +103,22 @@ a {
         position: fixed;
         top: 9vh;
         right: 0;
-        width: 20%;
-        height: 50vh;
+        width: 50vw;
         background: #EEEEEE;
         flex-direction: column;
         transform: translateX(100%);
         transition: 0.3s ease-in;
         border-radius: 11px;
         z-index: 20;
-        opacity: 0.9;
+        /*opacity: 0.9;*/
+        padding: 40px 10px;
+    }
+
+    #vl{
+        height: 0;
+        width: 90%;
+        border-bottom: 2px solid #808080;
+
     }
 }
 
@@ -122,13 +129,13 @@ a {
 
 /* Toggle Icon Animation */
 .toggle .first{
-    transform: rotate(-45deg) translate(-4px, 5px);
+    transform: rotate(-45deg) translate(-8px, 5px);
 }
 .toggle .second{
     opacity: 0;
 }
 .toggle .third{
-    transform: rotate(45deg) translate(-4px, -5px);
+    transform: rotate(45deg) translate(-8px, -5px);
 }
 
 .nav a {
@@ -153,4 +160,9 @@ a {
 .nav a:hover:after {
     width: 100%;
     left: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }

@@ -21,13 +21,13 @@ const Home = () => {
                     </p>
                     <button className="link-buttons"><h4>JOIN US</h4></button>
                 </div>
-                <div className="First-Picture">
+                <div>
                     <img className="Join-Image" src={Join} alt="Join-Us"/>
                 </div>
             </div>
 
             <div className="row">
-                <div className="Second-Picture">
+                <div>
                     <img src={Find} alt="Join-Us"/>
                 </div>
                 <div className="Find-More">

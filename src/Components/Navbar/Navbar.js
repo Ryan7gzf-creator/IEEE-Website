@@ -1,7 +1,8 @@
-import'./Navbar.css';
+import './Navbar.css';
 import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 import Logo from '../../assets/IEEE-Logo.png';
+
 function Navbar() {
     const [active, setActive] = useState("nav-menu");
     const [toggleIcon, setToggleIcon] = useState("nav-toggle");
@@ -19,10 +20,10 @@ function Navbar() {
     };
     return (
         <nav className="nav">
-            <a href="/"><img id="ieee-logo" src={Logo} alt= "IEEE-Logo"/></a>
-            <ul className={active} onClick={navToggle}>
+            <a href="/"><img id="ieee-logo" src={Logo} alt="IEEE-Logo"/></a>
+            <ul className={active}>
                 <li className="nav-items">
-                    <NavLink className="nav-link" to="/Events" >
+                    <NavLink className="nav-link" to="/Events">
                         EVENTS
                     </NavLink>
                 </li>
@@ -40,20 +41,21 @@ function Navbar() {
                     <input id="input" type="text"/>
                     <button id="searching">Search</button>
                 </li>
-                <li>
-                    <div id="vl"/>
-                </li>
+                <div id="vl"/>
                 <li id="login">
-                    <li className="nav-items">
-                        <NavLink className="nav-link" to="/Sign-in">
-                            SIGN IN
-                        </NavLink>
-                    </li>
-                    <li className="nav-items">
-                        <NavLink className="nav-link" to="/Register">
-                            REGISTER
-                        </NavLink>
-                    </li>
+                    <ul>
+                        <li className="nav-items">
+                            <NavLink className="nav-link" to="/Sign-in">
+                                SIGN IN
+                            </NavLink>
+                        </li>
+                        <li className="nav-items">
+                            <NavLink className="nav-link" to="/Register">
+                                REGISTER
+                            </NavLink>
+                        </li>
+                    </ul>
+
                 </li>
             </ul>
             <div onClick={navToggle} className={toggleIcon}>

@@ -47,10 +47,12 @@
     background-color: #FFD79B;
     transition: background-color 0.5s;
     cursor: pointer;
+    transition: .3s ease-in-out;
 }
 
 .link-buttons:hover {
     background-color: antiquewhite;
+    transform: scale(1.1);
 }
 
 .link-buttons h4{

@@ -1,11 +1,8 @@
 import './Home.css';
 import Join from '../../assets/First-image.svg';
 import Find from '../../assets/Second-image.svg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faFacebook, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 
-
-const Home = () => {
+function Home() {
     return (
         <>
             <div className="row">
@@ -43,19 +40,7 @@ const Home = () => {
                     <button className="link-buttons"><h4>FIND OUT MORE</h4></button>
                 </div>
             </div>
-            <div className="Footer">
-                <a className="social" href="https://www.facebook.com/UOAIEEESB">
-                    <FontAwesomeIcon icon={faFacebook} />
-                </a>
-                <a className="social" href="https://www.instagram.com/ieee.uoa/">
-                    <FontAwesomeIcon icon={faInstagram} />
-                </a>
-                <a className="social" href="https://www.linkedin.com/company/ieee-student-branch-uoa/">
-                    <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-            </div>
         </>
     );
 }
-
 export default Home;

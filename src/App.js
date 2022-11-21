@@ -3,6 +3,8 @@ import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import Events from  './Components/Events/Events'
 import Membership from './Components/Membership/Membership';
+import Footer from './Components/Footer/Footer';
+import React from 'react';
 import './App.css';
 
 function App() {
@@ -10,13 +12,14 @@ function App() {
       <div className="App">
           <Router>
               <Navbar />
-                  <div className="content">
-                      <Routes>
-                          <Route exact path="/" element={<Home />}/>
-                          <Route exact path="/" element={<Events />}/>
-                          <Route exact path="/" element={<Membership />}/>
-                      </Routes>
-                </div>
+              <div className="content">
+                  <Routes>
+                      <Route exact path="/" element={<Home />}/>
+                      <Route exact path="/" element={<Events />}/>
+                      <Route exact path="/" element={<Membership />}/>
+                  </Routes>
+              </div>
+              <Footer />
           </Router>
       </div>
   );

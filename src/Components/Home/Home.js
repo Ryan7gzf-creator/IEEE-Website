@@ -28,7 +28,7 @@ const Home = () => {
 
             <div className="row">
                 <div>
-                    <img src={Find} alt="Join-Us"/>
+                    <img className="Find-Image" src={Find} alt="Join-Us"/>
                 </div>
                 <div className="Joining">
                     <h2>
@@ -44,9 +44,15 @@ const Home = () => {
                 </div>
             </div>
             <div className="Footer">
-                <FontAwesomeIcon icon={faFacebook} />
-                <FontAwesomeIcon icon={faInstagram} />
-                <FontAwesomeIcon icon={faLinkedin} />
+                <a className="social" href="https://www.facebook.com/UOAIEEESB">
+                    <FontAwesomeIcon icon={faFacebook} />
+                </a>
+                <a className="social" href="https://www.instagram.com/ieee.uoa/">
+                    <FontAwesomeIcon icon={faInstagram} />
+                </a>
+                <a className="social" href="https://www.linkedin.com/company/ieee-student-branch-uoa/">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                </a>
             </div>
         </>
     );

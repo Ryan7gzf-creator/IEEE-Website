@@ -4,6 +4,7 @@ import Home from './Components/Home/Home';
 import Events from  './Components/Events/Events'
 import Membership from './Components/Membership/Membership';
 import Footer from './Components/Footer/Footer';
+import About from './Components/About/About';
 import React from 'react';
 import './App.css';
 
@@ -14,9 +15,10 @@ function App() {
               <Navbar />
               <div className="content">
                   <Routes>
-                      <Route exact path="/" element={<Home />}/>
-                      <Route exact path="/" element={<Events />}/>
-                      <Route exact path="/" element={<Membership />}/>
+                      <Route path="/" element={<Home />}/>
+                      <Route path="/" element={<Events />}/>
+                      <Route path="/" element={<Membership />}/>
+                      <Route path="./About" element={<About />}/>
                   </Routes>
               </div>
               <Footer />

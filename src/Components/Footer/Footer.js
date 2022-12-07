@@ -6,15 +6,17 @@ const Footer = () => {
     return(
         <nav className="bottomNavbar">
             <div className="footer">
-                <a href="https://www.facebook.com/UOAIEEESB">
-                    <FontAwesomeIcon icon={faFacebook} />
-                </a>
-                <a href="https://www.instagram.com/ieee.uoa/">
-                    <FontAwesomeIcon icon={faInstagram} />
-                </a>
-                <a href="https://www.linkedin.com/company/ieee-student-branch-uoa/">
-                    <FontAwesomeIcon icon={faLinkedin} />
-                </a>
+                <div className="social-media">
+                    <a href="https://www.facebook.com/UOAIEEESB">
+                        <FontAwesomeIcon icon={faFacebook} />
+                    </a>
+                    <a href="https://www.instagram.com/ieee.uoa/">
+                        <FontAwesomeIcon icon={faInstagram} />
+                    </a>
+                    <a href="https://www.linkedin.com/company/ieee-student-branch-uoa/">
+                        <FontAwesomeIcon icon={faLinkedin} />
+                    </a>
+                </div>
             </div>
         </nav>
     );

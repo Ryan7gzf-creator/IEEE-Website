@@ -1,8 +1,19 @@
 .footer {
-    padding: 30px;
+    padding: 20px;
     display: flex;
     justify-content: center;
-    font-size: 40px;
-    column-gap: 80px;
+}
+.social-media {
+    background-color: #DAEDF5;
+    border-radius: 30px;
+    padding: 15px;
+    justify-content: center;
+    column-gap: 55px;
+    font-size: 50px;
+    display: flex;
     transition-delay: 2s;
+}
+
+.social-media a{
+    color: #151725;
 }
